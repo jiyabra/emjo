@@ -4,11 +4,11 @@ var Prediction2 = "";
 Webcam.set({
     width:350,
     height:300,
-    Image_format:'png',
+    image_format:'png',
     png_quality:90
 });
 
-Camera = document.getElementById("camera");
+camera = document.getElementById("camera");
 
 Webcam.attach('#camera');
 
@@ -36,7 +36,7 @@ function speak(){
 }
 
 function check(){
-    img = document.getElementById('captured_Image');
+    img = document.getElementById('capture_image');
     classifier.classify(img, gotResult);
 }
 
